@@ -12,9 +12,10 @@ class mymodule::createfiles ($path_project = '/var/www/myproject')
         mode    => '0644',
     }
 
+    # Using source file
     file { "${path_project}/info.php":
-        ensure  => 'present',
-        content => "<?php phpinfo();",
-        mode    => '0644',
+        ensure => 'present',
+        source => "puppet:///modules/mymodule/info.php",
+        mode   => '0644',
     }
 }
