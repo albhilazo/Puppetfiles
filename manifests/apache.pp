@@ -8,4 +8,7 @@ class mymodule::apache
         port => '80',
         docroot => $pathMyProject
     }
+
+    # PHP module
+    # include apache::mod::php
 }

@@ -15,6 +15,4 @@ class mymodule::php56
     }
 
     php::module { [ 'devel', 'pear', 'xml', 'mbstring', 'pecl-memcache', 'soap' ]: }
-
-    include apache::mod::php
 }
