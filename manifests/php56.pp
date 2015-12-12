@@ -14,5 +14,5 @@ class mymodule::php56
         require => Yumrepo['remi-php56']
     }
 
-    php::module { [ 'devel', 'pear', 'xml', 'mbstring', 'pecl-memcache', 'soap' ]: }
+    php::module { [ 'devel', 'pear', 'xml', 'mbstring', 'pecl-memcache', 'soap', 'pdo', 'pdo_mysql' ]: }
 }
